@@ -17,24 +17,19 @@ public class ShiftZerosToRight {
 		
 		int j=0;
 		
-		for (int i = 0; i< numbers.length-1;i++) {
-			if (numbers[i]==0) {
-				numbers[i] = numbers[i+1];
-				numbers[i+1]=0;
+		for (int i = 0; i< numbers.length;i++) {
+			if (numbers[i]!=0 && numbers[j]==0) {
+				int temp = numbers[i];
+				numbers[i] = numbers[j];
+				numbers[j]=temp;
 			}
 			
 			if(numbers[j]!=0) {
 				j++;
-			}else {
-				if(numbers[j+1]!=0) {
-					numbers[j]=numbers[j+1];
-					numbers[j+1]=0;
-					j++;
-				}
 			}
 		}
 		for(int i=0;i<numbers.length;i++) {
-			System.out.print(numbers[i]);
+			System.out.print(numbers[i] + " ");
 		}
 		
 	}
