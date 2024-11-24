@@ -1,3 +1,5 @@
+package com.rrb.dsawithjava.problemsolving;
+
 class MissingNumber {
 
   public static int findMissingNumber(int[] arr) {

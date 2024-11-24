@@ -1,3 +1,5 @@
+package com.rrb.dsawithjava.problemsolving;
+
 class Palindrome {
   public boolean isPalindrome(String s) {
     char[] chars = s.toCharArray();
